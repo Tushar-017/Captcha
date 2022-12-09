@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Space+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f5f5f5;
+}
+
+.contactUs-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 450px;
+  background-color: #fff;
+  padding: 20px 30px;
+}
+
+.contactUs-form .form-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 20px 0px 30px 0px;
+  color: #111;
+}
+
+.contactUs-form .form-input {
+  margin: 10px 0px;
+}
+.contactUs-form .form-input label,
+.contactUs-form .captcha label {
+  display: block;
+  font-size: 15px;
+  color: #111;
+  margin-bottom: 5px;
+}
+
+.contactUs-form .form-input input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #888;
+  font-size: 15px;
+}
+
+.contactUs-form .captcha {
+  margin: 15px 0px;
+}
+
+.contactUs-form .captcha .preview {
+  color: #555;
+  width: 100%;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  letter-spacing: 8px;
+  /* border: 1px dotted #888 */
+  border-radius: 5px;
+  margin-block: 8px;
+  background-color: rgb(183, 240, 211);
+  font-family: "Space Mono", monospace;
+}
+
+.contactUs-form .captcha .preview span {
+  display: inline-block;
+  user-select: none;
+}
+
+.contactUs-form .captcha .captcha-form {
+  display: flex;
+}
+
+.contactUs-form .captcha .captcha-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #888;
+}
+
+.contactUs-form .captcha .captcha-form .captcha-refresh {
+  width: 40px;
+  border: none;
+  outline: none;
+  background: #888;
+  color: #eee;
+  cursor: pointer;
+}
+
+.contactUs-form #contact-btn {
+  margin-top: 5px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+}
