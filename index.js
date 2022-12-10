@@ -3,7 +3,7 @@
   let captchaValue = ""
   function generateCaptcha() {
     let value = btoa(Math.random() * 1000000000)
-    value = value.substr(0, 5 + Math.random() * 5)
+    value = value.substr(0, 3 + Math.random() * 5)
     captchaValue = value
   }
   function setCaptcha() {
@@ -33,4 +33,17 @@
     setCaptcha()
   }
   initCaptcha()
+
+  document
+    .querySelector(".contactUs-form #contact-btn")
+    .addEventListener("click", () => {
+      let inputCaptchaValue = document.querySelector(
+        ".contactUs-form .captcha input"
+      ).value
+      if (inputCaptchaValue === captchaValue) {
+        alert("Contact info is successfully send.")
+      } else {
+        alert("❌Invalid Captcha")
+      }
+    })
 })()
